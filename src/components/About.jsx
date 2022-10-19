@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { aboutbg } from "../assets";
 import Aboutcard from "./Aboutcard";
 
 export default function About() {
+  const [index, setIndex] = useState(0);
+  useEffect(() => {
+    setTimeout(() => {
+      setIndex((index + 1) % 3);
+    }, 1500);
+  }, [index]);
+
   return (
     <>
       <div className="about__us__section">
@@ -47,16 +54,19 @@ export default function About() {
             </div>
             <div className="about__us__container__overlay__right">
               <Aboutcard
+                active={index === 0}
                 heading="500+"
                 subheading="Projects"
                 text="Over 500 lexury villas for“Home Away From Home” experience"
               />
               <Aboutcard
+                active={index === 1}
                 heading="40+"
                 subheading="Locations"
                 text="luxury villas and private holiday homes, from all across"
               />
               <Aboutcard
+                active={index === 2}
                 heading="24/7"
                 subheading="Projects"
                 text="24/7 Help service for all customers to guide and support"
