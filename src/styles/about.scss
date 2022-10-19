@@ -1,0 +1,210 @@
+$white: #fff;
+$color: #ed1b24;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+.about__us__section {
+  width: 100%;
+}
+.about__us__section__container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+.about__us__section__container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about__us__container__overlay {
+  position: absolute;
+  padding: 4em;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about__us__container__overlay__left {
+  width: 65%;
+  padding: 2em;
+}
+.about__us__overlay__left__heading {
+  font-size: 35px;
+  color: $white;
+  font-weight: 600;
+  margin-bottom: 1em;
+  font-family: "Poppins", sans-serif;
+}
+.about__us__overlay__left__text {
+  font-size: 16px;
+  color: $white;
+  margin-bottom: 2em;
+  text-align: justify;
+  font-family: "Montserrat", sans-serif;
+  max-width: 800px;
+}
+.about__us__overlay__left__buttons {
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.about__us__overlay__left__buttons__contact {
+  width: 150px;
+  padding: 1em 0em;
+  background-color: $white;
+  color: #ed1b24;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.about__us__overlay__left__buttons__contact:hover {
+  background-color: $color;
+  transition: all 300ms ease-in-out;
+  color: $white;
+}
+.about__us__overlay__left__buttons__see__more {
+  width: 150px;
+  padding: 1em 0em;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: $white;
+  cursor: pointer;
+  margin-left: 12px;
+}
+.about__us__overlay__left__buttons__see__more svg {
+  margin-left: 8px;
+}
+.about__us__container__overlay__right {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+  padding-right: 0em;
+}
+.about__us__container__overlay__right__card {
+  width: 100%;
+  padding: 1em;
+  border-radius: 10px;
+  max-width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 12px 0px;
+}
+.about__us__overlay__right__card__heading {
+  font-size: 35px;
+  margin-bottom: 0.2em;
+  font-family: "Poppins", sans-serif;
+  color: $white;
+}
+.about__us__overlay__right__card__subheading {
+  font-size: 16px;
+  margin-bottom: 0.4em;
+  font-family: "Montserrat", sans-serif;
+  color: $white;
+}
+.about__us__overlay__right__card__text {
+  text-align: center;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0.4em;
+  color: $white;
+}
+.about__us__container__overlay__right__card:hover {
+  background-color: $white;
+  transition: all 300ms ease-in-out;
+}
+.about__us__container__overlay__right__card:hover
+  .about__us__overlay__right__card__heading,
+.about__us__overlay__right__card__subheading,
+.about__us__overlay__right__card__text {
+  color: black;
+}
+@media (max-width: 1000px) {
+  .about__us__container__overlay {
+    flex-direction: column;
+  }
+  .about__us__container__overlay__left {
+    width: 100%;
+    padding-top: 0em;
+  }
+  .about__us__container__overlay__right {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding-right: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .about__us__section__container img {
+    height: 900px;
+  }
+}
+@media (max-width: 850px) {
+  .about__us__section__container img {
+    height: 1100px;
+  }
+  .about__us__container__overlay__left {
+    padding-left: 0em;
+    padding-right: 0em;
+  }
+}
+@media (max-width: 650px) {
+  .about__us__section__container img {
+    height: 1050px;
+  }
+  .about__us__container__overlay__right__card {
+    max-width: 100%;
+  }
+  .about__us__container__overlay__right {
+    padding: 0em;
+  }
+  .about__us__container__overlay {
+    padding: 4em 2em;
+  }
+  .about__us__overlay__left__heading {
+    font-size: 30px;
+    margin-bottom: 0.8em;
+  }
+}
+@media (max-width: 550px) {
+  .about__us__section__container img {
+    height: 1100px;
+  }
+}
+@media (max-width: 500px) {
+  .about__us__section__container img {
+    height: 1150px;
+  }
+}
+
+@media (max-width: 450px) {
+  .about__us__section__container img {
+    height: 1200px;
+  }
+}

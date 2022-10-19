@@ -1,5 +1,10 @@
 import React from "react";
+import About from "../components/About";
 
 export default function index() {
-  return <div>index</div>;
+  return (
+    <div>
+      <About />
+    </div>
+  );
 }
