@@ -158,7 +158,8 @@ body {
   color: black;
 }
 .design__and__construction__section {
-  width: 100%;
+  width: calc(100% - 4em);
+  margin: 0 auto;
   position: relative;
 }
 .design__and__construction__section__container {
@@ -172,6 +173,15 @@ body {
   font-size: 25px;
   color: #ed1b24;
   margin-bottom: 0.5em;
+  font-weight: 600;
+}
+.swiper__img__overlay__content__hover {
+  height: 100%;
+  background-color: #ed1b24;
+  opacity: 0.9;
+  position: absolute;
+  z-index: 999;
+  top: 0;
 }
 .design__and__construction__section___text__container {
   display: flex;
@@ -200,6 +210,8 @@ body {
 .swiper__img {
   width: 100%;
   height: 500px;
+  position: relative;
+  max-width: 400px;
 }
 .swiper__img img {
   width: 100%;
@@ -210,7 +222,97 @@ body {
   align-items: center;
   justify-content: center;
 }
-
+.swiper__img__overlay__content__hover {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  border-radius: 15px;
+  color: $white;
+}
+.swiper__img__overlay__content__hover__content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.swiper__img__overlay__hover__content__heading {
+  font-size: 25px;
+  margin-bottom: 0.3em;
+  font-weight: 600;
+}
+.swiper__img__overlay__hover__content__subheading {
+  font-size: 16px;
+  margin-bottom: 1em;
+  font-weight: 500;
+  margin-bottom: 1.5em;
+}
+.swiper__img__overlay__hover__content__button {
+  height: 40px;
+  padding: 0em 2em;
+  background-color: #000000;
+  color: #fff;
+  margin-bottom: 2em;
+  cursor: pointer;
+}
+.swiper__img__overlay__hover__content__button__svg {
+  display: flex;
+  align-items: center;
+}
+.swiper__img__overlay__hover__content__button__svg svg {
+  margin: 0px 5px;
+  width: 24px;
+  height: 25px;
+}
+.swiper__img__overlay {
+  position: absolute;
+  bottom: 30px;
+  width: calc(100% - 2em);
+  left: 0;
+  margin: 0 auto;
+  right: 0;
+  padding: 2em;
+  background-color: #000000;
+  opacity: 0.9;
+  border-radius: 12px;
+}
+.swiper__img__overlay__content__heading {
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 0.1em;
+}
+.swiper__img__overlay__content__subheading {
+  color: #fff;
+  margin-bottom: 1.5em;
+  font-size: 16px;
+}
+.swiper__img__overlay__content__bottom {
+  display: flex;
+  justify-content: space-between;
+  z-index: 99;
+}
+.swiper__img__overlay__content__bottom__btn button {
+  background-color: #ed1b24;
+  color: #fff;
+  height: 35px;
+  padding: 0 1em;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+}
+.swiper__img__overlay__content__bottom__svg {
+  display: flex;
+  align-items: center;
+}
+.swiper__img__overlay__content__bottom__svg svg {
+  margin-left: 0.7em;
+}
 .swiper__button__handles {
   position: absolute;
   right: 0;
@@ -250,6 +352,81 @@ body {
 .swiper__button__handles .swiper-button-disabled {
   color: #ed1b24 !important;
   background-color: #fff !important;
+}
+.benefit__section {
+  width: 100%;
+  padding: 4em;
+}
+.benefit__section__container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.benefit__section__container__heading {
+  color: #ed1b24;
+  font-size: 35px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 1em;
+}
+.benefit__section__container__sub__heading {
+  font-size: 35px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+.benefit__section__container__sub__text {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 14px;
+  text-align: center;
+  max-width: 800px;
+  color: #8a8989;
+}
+.benefit__section__container__cards {
+  width: 100%;
+  margin-top: 6em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.benefit__section__container__cards__entry {
+  width: 48%;
+  display: flex;
+  padding: 2em;
+  border-radius: 10px;
+  transition: 200ms ease-in-out;
+  background-color: #eeeeee;
+  margin: 0.5em;
+  min-width: 400px;
+}
+.benefit__section__container__cards__entry__data__text {
+  font-size: 14px;
+}
+.benefit__section__container__cards__entry:hover {
+  background-color: #000000;
+}
+.benefit__section__container__cards__entry:hover * {
+  color: #fff;
+}
+.benefit__section__container__cards__entry__svg {
+  margin-right: 0.8em;
+}
+.benefit__section__container__cards__entry__svg svg {
+  background-color: $color;
+  height: 60px;
+  width: 60px;
+  padding: 1em;
+  z-index: 1;
+  border-radius: 30px;
+}
+
+.benefit__section__container__cards__entry__data {
+  padding: 1em;
+}
+.benefit__section__container__cards__entry__data__heading {
+  margin-bottom: 1em;
+  font-weight: bold;
 }
 @media (max-width: 1500px) {
   .about__us__section {

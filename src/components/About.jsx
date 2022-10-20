@@ -7,7 +7,7 @@ export default function About() {
   useEffect(() => {
     setTimeout(() => {
       setIndex((index + 1) % 3);
-    }, 1500);
+    }, 2000);
   }, [index]);
 
   return (

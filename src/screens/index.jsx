@@ -1,5 +1,6 @@
 import React from "react";
 import About from "../components/About";
+import Benefit from "../components/Benefit";
 import { Projects } from "../components/Projects";
 
 export default function index() {
@@ -7,6 +8,7 @@ export default function index() {
     <>
       <About />
       <Projects />
+      <Benefit />
     </>
   );
 }
