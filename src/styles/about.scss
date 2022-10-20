@@ -75,14 +75,13 @@ body {
   color: #ed1b24;
   font-size: 15px;
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
-  border: 1px solid transparent;
+  border: 3px solid transparent;
 }
 .about__us__overlay__left__buttons__contact:hover {
-  background-color: $color;
+  border: 3px solid $color;
   transition: all 300ms ease-in-out;
-  color: $white;
 }
 .about__us__overlay__left__buttons__see__more {
   width: 150px;
@@ -443,6 +442,56 @@ body {
   font-size: 25px;
   font-weight: bold;
 }
+.benefit__section__container__cards__button {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 6em;
+}
+.benefit__section__container__cards__button__contact {
+  height: 50px;
+  padding: 0em 3em;
+  cursor: pointer;
+  background-color: $color;
+  color: $white;
+  border: 1px solid $color;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+.benefit__section__container__cards__button__contact:hover {
+  background-color: rgb(246, 30, 50);
+}
+.benefit__section__container__cards__button__more {
+  height: 50px;
+  padding: 0em 3em;
+  cursor: pointer;
+  background-color: transparent;
+  color: black;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.5em;
+  font-weight: bold;
+}
+.benefit__section__container__cards__button__more svg {
+  color: black;
+  margin-left: 0.5em;
+}
+.benefit__section__container__cards__button__more:hover * {
+  color: $color;
+}
+.benefit__section__container__cards__button__more:hover {
+  color: $color;
+}
+
 @media (max-width: 1500px) {
   .about__us__section {
     margin: 0em 2em;
