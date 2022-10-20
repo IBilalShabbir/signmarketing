@@ -96,6 +96,7 @@ export default function Benefit() {
             work is different."
           />
         </div>
+        <div></div>
       </div>
     </div>
   );
