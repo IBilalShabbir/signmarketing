@@ -192,6 +192,7 @@ body {
   font-weight: 600;
   max-width: 600px;
   padding: 1em 0em;
+  padding-top: 0em;
 }
 .design__and__construction__section__container__heading__right {
   width: 50%;
@@ -278,7 +279,7 @@ body {
 }
 
 .swiper__img__overlay__content__heading {
-  font-size: 25px;
+  font-size: 18px;
   font-weight: bold;
   color: #fff;
   margin-bottom: 0.1em;
@@ -286,7 +287,7 @@ body {
 .swiper__img__overlay__content__subheading {
   color: #fff;
   margin-bottom: 1.5em;
-  font-size: 16px;
+  font-size: 14px;
 }
 .swiper__img__overlay__content__bottom {
   display: flex;
@@ -298,6 +299,7 @@ body {
   color: #fff;
   height: 35px;
   padding: 0 1em;
+  font-size: 15px;
   z-index: 999;
   display: flex;
   align-items: center;
@@ -366,7 +368,6 @@ body {
   font-size: 35px;
   text-align: center;
   font-family: "Poppins", sans-serif;
-  margin-bottom: 0.5em;
 }
 .benefit__section__container__sub__heading {
   font-size: 35px;
@@ -384,7 +385,7 @@ body {
 }
 .benefit__section__container__cards {
   width: 100%;
-  margin-top: 6em;
+  margin: 4em 0em;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -392,6 +393,7 @@ body {
 .benefit__section__container__cards__entry {
   width: 48%;
   display: flex;
+  align-items: flex-start;
   padding: 2em;
   border-radius: 10px;
   transition: 200ms ease-in-out;
@@ -436,9 +438,10 @@ body {
 
 .benefit__section__container__cards__entry__data {
   padding: 1em;
+  padding-top: 0em;
 }
 .benefit__section__container__cards__entry__data__heading {
-  margin-bottom: 0.8em;
+  margin-bottom: 0.4em;
   font-size: 25px;
   font-weight: bold;
 }
@@ -448,7 +451,6 @@ body {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  margin-top: 6em;
 }
 .benefit__section__container__cards__button__contact {
   height: 50px;
