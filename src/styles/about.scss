@@ -80,7 +80,7 @@ body {
   border: 3px solid transparent;
 }
 .about__us__overlay__left__buttons__contact:hover {
-  border: 3px solid $color;
+  border: 3px solid rgb(246, 30, 50);
   transition: all 300ms ease-in-out;
 }
 .about__us__overlay__left__buttons__see__more {
@@ -95,6 +95,7 @@ body {
   cursor: pointer;
   margin-left: 12px;
 }
+
 .about__us__overlay__left__buttons__see__more svg {
   margin-left: 8px;
 }
@@ -115,7 +116,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 1em 0px;
+  margin: 0.5em;
 }
 .about__us__overlay__right__card__heading {
   font-family: "Poppins", sans-serif;
@@ -513,6 +514,7 @@ body {
     width: 100%;
     flex-direction: row;
     padding-right: 2em;
+    padding: 1em;
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -539,9 +541,23 @@ body {
     text-align: center;
   }
 }
+@media (max-width: 917px) {
+  .about__us__section {
+    height: 1020px;
+  }
+  .about__us__section__container img {
+    height: 1020px;
+  }
+}
 @media (max-width: 900px) {
   .benefit__section__container__cards__entry {
     width: 80%;
+  }
+  .about__us__section {
+    height: 1050px;
+  }
+  .about__us__section__container img {
+    height: 1050px;
   }
 }
 @media (max-width: 850px) {
