@@ -78,6 +78,7 @@ body {
   border-radius: 10px;
   cursor: pointer;
   border: 3px solid transparent;
+  font-family: "Poppins", sans-serif;
 }
 .about__us__overlay__left__buttons__contact:hover {
   border: 3px solid rgb(246, 30, 50);
@@ -94,6 +95,7 @@ body {
   color: $white;
   cursor: pointer;
   margin-left: 12px;
+  font-family: "Poppins", sans-serif;
 }
 
 .about__us__overlay__left__buttons__see__more svg {
@@ -134,7 +136,7 @@ body {
 .about__us__overlay__right__card__text {
   text-align: center;
   font-size: 12px;
-
+  font-family: "Poppins", sans-serif;
   margin-bottom: 0.4em;
   color: $white;
   width: 100%;
@@ -174,6 +176,7 @@ body {
   color: #ed1b24;
   margin-bottom: 0.5em;
   font-weight: 600;
+  font-family: "Poppins", sans-serif;
 }
 .swiper__img__overlay__content__hover {
   height: 100%;
@@ -190,16 +193,18 @@ body {
 .design__and__construction__section__container__heading__left {
   width: 50%;
   font-size: 35px;
-  font-weight: 600;
+  font-weight: bold;
   max-width: 600px;
   padding: 1em 0em;
   padding-top: 0em;
+  font-family: "Poppins", sans-serif;
 }
 .design__and__construction__section__container__heading__right {
   width: 50%;
   padding: 1em;
   font-size: 14px;
   max-width: 550px;
+  font-family: "Poppins", sans-serif;
 }
 .swiper__content__sec {
   width: 100%;
@@ -284,6 +289,7 @@ body {
   font-weight: bold;
   color: #fff;
   margin-bottom: 0.1em;
+  font-family: "Poppins", sans-serif;
 }
 .swiper__img__overlay__content__subheading {
   color: #fff;
@@ -355,9 +361,9 @@ body {
   background-color: #fff !important;
 }
 .benefit__section {
-  width: calc(100% - 2em);
-  margin: 0em 1em;
+  width: 100%;
   padding: 4em 0em;
+  background-color: #eeeeee;
 }
 .benefit__section__container {
   width: 100%;
@@ -375,6 +381,7 @@ body {
   text-align: center;
   font-weight: bold;
   margin-bottom: 0.5em;
+  font-family: "Poppins", sans-serif;
 }
 .benefit__section__container__sub__text {
   width: 100%;
@@ -390,6 +397,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  background-color: #eeeeee;
 }
 .benefit__section__container__cards__entry {
   width: 48%;
@@ -401,6 +409,7 @@ body {
   background-color: #eeeeee;
   margin: 0.5em;
   min-width: 410px;
+  cursor: pointer;
 }
 .benefit__section__container__cards__entry__data__text {
   font-size: 14px;
@@ -445,6 +454,7 @@ body {
   margin-bottom: 0.4em;
   font-size: 25px;
   font-weight: bold;
+  font-family: "Poppins", sans-serif;
 }
 .benefit__section__container__cards__button {
   width: 100%;
@@ -465,6 +475,7 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 16px;
+  font-family: "Poppins", sans-serif;
 }
 .benefit__section__container__cards__button__contact:hover {
   background-color: rgb(246, 30, 50);
@@ -483,6 +494,7 @@ body {
   justify-content: center;
   margin-left: 0.5em;
   font-weight: bold;
+  font-family: "Poppins", sans-serif;
 }
 .benefit__section__container__cards__button__more svg {
   color: black;
@@ -1049,10 +1061,7 @@ body {
   .benefit__section__container__cards__entry__svg {
     margin-right: 0em;
   }
-  .benefit__section__container__cards__entry__data__text {
-    font-size: 12px;
-    text-align: justify;
-  }
+
   .benefit__section__container__cards__entry__data__heading {
     font-size: 18px;
   }
