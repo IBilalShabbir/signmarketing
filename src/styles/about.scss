@@ -494,11 +494,144 @@ body {
 .benefit__section__container__cards__button__more:hover {
   color: $color;
 }
+.your__choice__sec {
+  width: 100%;
+  margin-top: 4em;
+}
+.your__choice__container {
+  width: 100%;
+  padding: 4em 0em;
+  max-width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding-top: 0em;
+}
+.your__choice__container__left {
+  width: 50%;
+  padding-left: 2em;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.your__choice__container__left__swiper {
+  width: 100%;
+  height: 100%;
+}
+.your__choice__slider__img {
+  width: 100%;
+  height: 100%;
+}
+.your__choice__slider__img img {
+  width: 100%;
+  height: 100%;
+}
+.swiper__button__handles__your__choice {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  z-index: 999;
+  display: flex;
+}
+
+.swiper__button__handles__your__choice button {
+  height: 45px;
+  padding: 0em 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ed1b24;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+.swiper__button__handles__your__choice button svg {
+  width: 20px;
+  height: 20px;
+}
+.swiper__button__handles__your__choice button:hover {
+  color: white;
+  background-color: #ed1b24;
+}
+.swiper__button__handles__your__choice button:nth-child(2) {
+  margin-left: 5px;
+}
+.your__choice__container__right {
+  width: 50%;
+  padding: 0em;
+  display: flex;
+  justify-content: end;
+  position: relative;
+  min-width: 600px;
+  height: 100%;
+  min-height: 100%;
+}
+
+.your__choice__container__right__imgbg {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  height: 100%;
+  max-height: 500px;
+  max-width: 500px;
+  width: 100%;
+}
+.your__choice__container__right__wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+.your__choice__container__right__wrapper img {
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+.your__choice__container__right__wrapper__text {
+  position: absolute;
+  left: 70px;
+  color: $white;
+}
+.your__choice__container__right__wrapper__text__heading {
+  font-size: 16px;
+  margin-bottom: 0.5em;
+  font-family: "Poppins", sans-serif;
+}
+.your__choice__container__right__wrapper__text__text {
+  font-size: 22px;
+  max-width: 250px;
+  font-weight: 600;
+}
 
 @media (max-width: 1500px) {
   .about__us__section {
     margin: 0em 2em;
     width: calc(100% - 4em);
+  }
+  .your__choice__container__right img {
+    max-width: 400px;
+  }
+}
+@media (max-width: 1200px) {
+  .your__choice__container {
+    flex-direction: column;
+    min-height: 100%;
+  }
+  .your__choice__container__left {
+    height: 100%;
+    width: calc(100% - 4em);
+    padding: 2em 0em;
+  }
+  .your__choice__container__right {
+    width: 100%;
+    max-width: 600px;
+    padding: 2em 0em;
   }
 }
 @media (max-width: 1000px) {
@@ -595,6 +728,26 @@ body {
   .design__and__construction__section__container {
     padding: 4em 2em;
   }
+  .your__choice__container__right {
+    min-height: 300px;
+  }
+  .your__choice__container__right__imgbg {
+    display: none;
+  }
+  .your__choice__container__right__wrapper {
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    justify-content: center;
+  }
+  .your__choice__container__right__wrapper__text {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .your__choice__container__right {
+    min-width: 100%;
+  }
 }
 @media (max-width: 550px) {
   .about__us__section {
@@ -608,6 +761,13 @@ body {
   }
 }
 @media (max-width: 500px) {
+  .about__us__section {
+    margin: 0em 0em;
+    width: calc(100% - 0em);
+  }
+  .design__and__construction__section {
+    width: calc(100% - 1em);
+  }
   .about__us__section {
     height: 1150px;
   }
@@ -628,6 +788,12 @@ body {
   .benefit__section__container__cards__entry {
     min-width: 100%;
     padding: 1.5em;
+  }
+  .benefit__section__container__cards__button__contact {
+    padding: 0em 1.5em;
+  }
+  .benefit__section__container__cards__button__more {
+    padding: 0em 1.5em;
   }
 }
 
