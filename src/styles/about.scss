@@ -500,13 +500,11 @@ body {
 }
 .your__choice__container {
   width: 100%;
-  padding: 4em 0em;
   max-width: 1440px;
   height: 100%;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  padding-top: 0em;
 }
 .your__choice__container__left {
   width: 50%;
@@ -608,7 +606,61 @@ body {
   max-width: 250px;
   font-weight: 600;
 }
-
+.region__sec {
+  width: 100%;
+}
+.region__sec__con {
+  width: calc(100% - 4em);
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.region__sec__content {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 4em 0em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.region__sec__content__container__card {
+  flex: 1;
+  max-width: 480px;
+  min-width: 350px;
+  margin: 0.5em;
+  background-color: #f8f8f8;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 2em 2em;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  cursor: pointer;
+}
+.region__sec__content__container__card:hover {
+  transition: 200ms ease-in-out;
+  -webkit-filter: grayscale(0); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0);
+}
+.region__sec__content__container__card__content {
+  opacity: 25%;
+}
+.region__sec__content__container__card__content img {
+  width: 220px;
+  height: 200px;
+}
+.region__sec__content__container__card:hover
+  .region__sec__content__container__card__content {
+  opacity: 100%;
+  transition: ease-in-out;
+  transition: 300ms ease-in-out;
+}
+.region__sec__content__container__card__content__text {
+  font-size: 16px;
+  font-weight: 600;
+}
 @media (max-width: 1500px) {
   .about__us__section {
     margin: 0em 2em;
@@ -795,6 +847,9 @@ body {
   .benefit__section__container__cards__button__more {
     padding: 0em 1.5em;
   }
+  .your__choice__container__right img {
+    max-width: 350px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -803,5 +858,9 @@ body {
   }
   .about__us__section__container img {
     height: 1200px;
+  }
+  .region__sec__content__container__card__content img {
+    width: 170px;
+    height: 150px;
   }
 }
