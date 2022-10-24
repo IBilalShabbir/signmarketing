@@ -13,3 +13,4 @@ export { default as mos5 } from "./mos5.png";
 export { default as mos6 } from "./mos6.png";
 export { default as contactform } from "./contactform.png";
 export { default as citymap } from "./citymap.png";
+export { default as logo } from "./logo.png";
