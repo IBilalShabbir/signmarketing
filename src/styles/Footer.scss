@@ -97,6 +97,12 @@ body {
   height: 30px;
   width: 50px;
   margin: 0em 1em;
+  color: black;
+  transition: 300ms ease-in-out;
+}
+.footer__icon__link svg:hover {
+  color: red;
+  transition: 200ms ease-in-out;
 }
 .term__footer {
   width: 100%;
@@ -110,7 +116,6 @@ body {
 .term__footer__right a {
   padding: 0px 12px;
   color: black;
-  text-decoration: none;
 }
 .term__footer__right a:hover {
   color: #ed1b24;
