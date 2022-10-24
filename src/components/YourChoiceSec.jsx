@@ -1,6 +1,5 @@
 import React from "react";
 import { Navigation, Pagination } from "swiper";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import { swiper123, yourchoicebg, yourchoicewrapper } from "../assets";
 

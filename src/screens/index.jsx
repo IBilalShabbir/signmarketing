@@ -7,7 +7,6 @@ import { Projects } from "../components/Projects";
 import RegionSec from "../components/RegionSec";
 import YourChoiceSec from "../components/YourChoiceSec";
 import AOS from "aos";
-import "aos/dist/aos.css";
 
 export default function index() {
   AOS.init();
