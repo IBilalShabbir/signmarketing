@@ -1,9 +1,38 @@
-.subscribe__card__container {
+$white: #fff;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+.footer {
+  position: relative;
   width: 100%;
+}
+.footer img {
+  width: 100%;
+  height: 100%;
+  margin-top: -3em;
+}
+.footer__overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin-top: -2em;
+}
+.subscribe__card__container {
+  width: calc(100% - 6em);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 3em;
+  padding: 4em 3em;
   background-color: $white;
   max-width: 1440px;
   margin: 0 auto;
@@ -11,8 +40,8 @@
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 .subscribe__card__container__heading {
-  font-size: 36px;
-  font-weight: 700;
+  font-size: 35px;
+  font-weight: 600;
   padding: 0em 1em;
 }
 .subscribe__card__container__mail {
@@ -99,12 +128,13 @@
 }
 .term__footer {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 2em 2em;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-size: 16px;
 }
 .term__footer__right a {
   padding: 0px 12px;
@@ -114,6 +144,9 @@
 .term__footer__right a:hover {
   color: #ed1b24;
   transition: 300ms ease-in-out;
+}
+.term__footer__left {
+  font-size: 16px;
 }
 @media (max-width: 1000px) {
   .subscribe__card__container {
@@ -139,6 +172,13 @@
   }
   .footer__link__section__icon {
     width: 100%;
+  }
+  .footer img {
+    display: none;
+    margin-top: 0em;
+  }
+  .footer__overlay {
+    margin-top: 0em;
   }
 }
 @media (max-width: 700px) {

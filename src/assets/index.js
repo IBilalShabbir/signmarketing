@@ -15,3 +15,4 @@ export { default as contactform } from "./contactform.png";
 export { default as citymap } from "./citymap.png";
 export { default as logo } from "./logo.png";
 export { default as homebanner } from "./homebanner.png";
+export { default as footerbg } from "./footerbg.png";
