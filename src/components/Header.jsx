@@ -1,101 +1,103 @@
-import React, { useLayoutEffect } from "react";
-import { NavLink, Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 import { logo } from "../assets";
+import { X, Menu } from "react-feather";
 
 export default function Header() {
-  const [isOpen, setIsOpen] = React.useState(true);
-  function checkNavOpenClose() {
-    if (window.innerWidth < 900) {
-      setIsOpen(false);
-    } else {
-      setIsOpen(true);
+  const [isNavOpen, setIsNavOpen] = useState(true);
+  const [isScrolling, setIsScrolling] = useState(false);
+  useEffect(() => {
+    function changeNav() {
+      setIsNavOpen(window.innerWidth > 1000);
     }
-  }
-  useLayoutEffect(() => {
-    checkNavOpenClose();
-    window.addEventListener("resize", checkNavOpenClose);
+
+    window.addEventListener("resize", changeNav);
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 0) {
+        setIsScrolling(true);
+      } else {
+        setIsScrolling(false);
+      }
+    });
   }, []);
+
+  const navLinks = [
+    {
+      label: "Home",
+      scrollTo: "home",
+    },
+    {
+      label: "About Us",
+      scrollTo: "about",
+    },
+    {
+      label: "Projects",
+      scrollTo: "projects",
+    },
+    {
+      label: "Products",
+      scrollTo: "products",
+    },
+    {
+      label: "Contact",
+      scrollTo: "contact",
+    },
+  ];
   return (
-    <div>
-      <div className="sign__header__wraper">
-        <div className="sign__header__container">
-          <Link to="/" className="sign__header__logo">
-            <img src={logo} alt="logo" />
-          </Link>
-          {isOpen ? (
-            <div className="nav__bar__contact">
-              <NavLink to="/" className="nav__bar__contant__link" end>
-                Home
-              </NavLink>
-              <NavLink to="/about" className="nav__bar__contant__link">
-                About Us
-              </NavLink>
-              <NavLink to="/project" className="nav__bar__contant__link">
-                Project
-              </NavLink>
-              <NavLink to="/products" className="nav__bar__contant__link">
-                Products
-              </NavLink>
-              <NavLink to="/contact" className="nav__bar__contant__link">
-                Contact
-              </NavLink>
-            </div>
-          ) : null}
-          <div className="nav__bar__btn__menu">
-            <button
-              className="nav__btn"
-              onClick={() => {
-                setIsOpen(!isOpen);
-              }}
-            >
-              {isOpen ? (
-                <Close size="20" color="white" />
-              ) : (
-                <Menu size="20" color="white" />
-              )}
-            </button>
+    <div className={isScrolling ? "header header__active" : "header"}>
+      <div className="header__content">
+        <button
+          onClick={() => {
+            document.getElementById("home").checked = true;
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+          className="header__content__logo"
+        >
+          <img src={logo} alt="logo" />
+        </button>
+        <button
+          className="header__content__nav__menu"
+          onClick={() => {
+            setIsNavOpen(!isNavOpen);
+          }}
+        >
+          {isNavOpen ? (
+            <X size={20} color="currentColor" />
+          ) : (
+            <Menu size={20} color="currentColor" />
+          )}
+        </button>
+        {isNavOpen && (
+          <div className="header__content__nav">
+            {navLinks.map((link, index) => (
+              <NavLink
+                scrollTo={link.scrollTo}
+                label={link.label}
+                defaultChecked={index === 0}
+              />
+            ))}
           </div>
-        </div>
+        )}
       </div>
     </div>
   );
 }
-export function Close({ size, color }) {
+
+function NavLink({ label, scrollTo, defaultChecked }) {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width={size}
-      height={size}
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke={color}
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className="feather feather-x"
-    >
-      <line x1="18" y1="6" x2="6" y2="18"></line>
-      <line x1="6" y1="6" x2="18" y2="18"></line>
-    </svg>
-  );
-}
-export function Menu({ size, color }) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width={size}
-      height={size}
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke={color}
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className="feather feather-menu"
-    >
-      <line x1="3" y1="12" x2="21" y2="12"></line>
-      <line x1="3" y1="6" x2="21" y2="6"></line>
-      <line x1="3" y1="18" x2="21" y2="18"></line>
-    </svg>
+    <div className="header__content__nav__link">
+      <input
+        type="radio"
+        className="header__content__nav__link__input"
+        name="header__content__nav__link"
+        defaultChecked={defaultChecked}
+        id={scrollTo}
+        onChange={() => {
+          document
+            .getElementById(scrollTo + "__section")
+            .scrollIntoView({ behavior: "smooth" });
+        }}
+      />
+      <div className="header__content__nav__link__content">{label}</div>
+    </div>
   );
 }
