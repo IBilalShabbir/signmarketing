@@ -5,16 +5,46 @@ export default function Benefit() {
   return (
     <div className="benefit__section">
       <div className="benefit__section__container">
-        <div className="benefit__section__container__heading">Benefit</div>
-        <div className="benefit__section__container__sub__heading">
+        <div
+          className="benefit__section__container__heading"
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-delay="40"
+          data-aos-duration="1500"
+          data-aos-easing="ease-in-out"
+        >
+          Benefit
+        </div>
+        <div
+          className="benefit__section__container__sub__heading"
+          data-aos="fade-left"
+          data-aos-offset="200"
+          data-aos-delay="40"
+          data-aos-duration="1500"
+          data-aos-easing="ease-in-out"
+        >
           We Provide Architectural design
         </div>
-        <div className="benefit__section__container__sub__text">
+        <div
+          className="benefit__section__container__sub__text"
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-delay="40"
+          data-aos-duration="1500"
+          data-aos-easing="ease-in-out"
+        >
           ​More than 100 building and housing projects that we have built. The
           building owner chose us over other contractors in Jakarta, because our
           work is different.
         </div>
-        <div className="benefit__section__container__cards">
+        <div
+          className="benefit__section__container__cards"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1500"
+          data-aos-easing="ease-in-out"
+        >
           <BenefitCardsEntry
             svg={
               <svg

@@ -10,7 +10,14 @@ export default function YourChoiceSec() {
   return (
     <div className="your__choice__sec">
       <div className="your__choice__container">
-        <div className="your__choice__container__left">
+        <div
+          className="your__choice__container__left"
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-delay="40"
+          data-aos-duration="1200"
+          data-aos-easing="ease-in-out"
+        >
           <Swiper
             modules={[Navigation, Pagination]}
             spaceBetween={30}
@@ -103,7 +110,14 @@ export default function YourChoiceSec() {
             </div>
           </Swiper>
         </div>
-        <div className="your__choice__container__right">
+        <div
+          className="your__choice__container__right"
+          data-aos="fade-left"
+          data-aos-offset="200"
+          data-aos-delay="40"
+          data-aos-duration="1200"
+          data-aos-easing="ease-in-out"
+        >
           <img
             src={yourchoicebg}
             className="your__choice__container__right__imgbg"

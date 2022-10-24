@@ -24,23 +24,30 @@ export function Projects() {
     window.addEventListener("resize", changeSlidesPerView);
   }, []);
   return (
-    <div
-      className="design__and__construction__section"
-      data-aos="fade-up"
-      data-aos-offset="200"
-      data-aos-delay="50"
-      data-aos-duration="1000"
-      data-aos-easing="ease-in-out"
-    >
+    <div className="design__and__construction__section">
       <div className="design__and__construction__section__container">
         <div className="design__and__construction__section___heading">
           Projects
         </div>
         <div className="design__and__construction__section___text__container">
-          <div className="design__and__construction__section__container__heading__left">
+          <div
+            className="design__and__construction__section__container__heading__left"
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out"
+          >
             We Provide Architectural design and Construction
           </div>
-          <div className="design__and__construction__section__container__heading__right">
+          <div
+            className="design__and__construction__section__container__heading__right"
+            data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out"
+          >
             More than 100 building and housing projects that we have built. The
             building owner chose us over other contractors in Jakarta, because
             our work is different.

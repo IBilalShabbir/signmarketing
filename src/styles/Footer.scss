@@ -19,7 +19,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 3em;
-  background-color: rgb(239, 239, 239);
+  background-color: $white;
   max-width: 1440px;
   margin: 0 auto;
   border-radius: 12px;
@@ -43,20 +43,28 @@ body {
   max-width: 400px;
   background: transparent;
   border: 1px solid black;
-  border-radius: 9px;
+  border-radius: 5px;
   outline: none;
   padding-right: 12em;
 }
 .subscribe__mail__btn {
   position: relative;
-  background-color: red;
+  background-color: #ed1b24;
   color: white;
   border: none;
-  padding: 0 1.5em;
-  height: 46px;
-  border-radius: 9px;
+  padding: 0 1em;
+  font-size: 13px;
+  height: 38px;
+  border-radius: 5px;
   cursor: pointer;
-  margin-left: -10.7em;
+  margin-left: -10.2em;
+  border: 1px solid transparent;
+  transition: 300ms ease-in-out;
+}
+.subscribe__mail__btn:hover {
+  background-color: $white;
+  border: 1px solid #ed1b24;
+  color: #ed1b24;
 }
 .footer__link__section {
   width: calc(100% - 4em);
@@ -116,6 +124,7 @@ body {
 .term__footer__right a {
   padding: 0px 12px;
   color: black;
+  text-decoration: none;
 }
 .term__footer__right a:hover {
   color: #ed1b24;
@@ -182,6 +191,6 @@ body {
   }
   .subscribe__mail__btn {
     padding: 0.9em 0.5em;
-    margin-left: -8.7em;
+    margin-left: -9.2em;
   }
 }
