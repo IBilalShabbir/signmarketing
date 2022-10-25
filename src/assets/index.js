@@ -16,3 +16,6 @@ export { default as citymap } from "./citymap.png";
 export { default as logo } from "./logo.png";
 export { default as homebanner } from "./homebanner.png";
 export { default as footerbg } from "./footerbg.png";
+export { default as banner } from "./banner.png";
+export { default as homebottom } from "./homebottom.png";
+export { default as svg1 } from "./svg1.png";

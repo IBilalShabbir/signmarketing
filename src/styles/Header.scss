@@ -9,11 +9,11 @@
 }
 .header__content {
   width: 100%;
+  max-width: 1440px;
+  margin: 0em auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1440px;
-  margin: 0em auto;
   padding: 1em 0em;
 }
 .header__content__logo {
@@ -25,6 +25,10 @@
   border: none;
   outline: none;
   cursor: pointer;
+}
+.header__content__logo img {
+  width: 100%;
+  height: 100%;
 }
 .header__content__nav__menu {
   display: none;
