@@ -7,7 +7,9 @@ import { Projects } from "../components/Projects";
 import RegionSec from "../components/RegionSec";
 import YourChoiceSec from "../components/YourChoiceSec";
 import AOS from "aos";
-import { banner, homebottom, svg1 } from "../assets";
+import { banner, homebottom, svg1, svg2, svg3, svg4, svg5 } from "../assets";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { useEffect, useState } from "react";
 
 export default function index() {
   AOS.init();
@@ -26,6 +28,26 @@ export default function index() {
 }
 
 function HomeSection() {
+  const [slidesPerView, setSlidesPerView] = useState(5);
+  function changeSlidesPerView() {
+    if (window.innerWidth < 500) {
+      setSlidesPerView(1);
+    } else if (window.innerWidth < 700) {
+      setSlidesPerView(2);
+    } else if (window.innerWidth < 900) {
+      setSlidesPerView(3);
+    } else if (window.innerWidth < 1200) {
+      setSlidesPerView(4);
+    } else if (window.innerWidth < 1400) {
+      setSlidesPerView(5);
+    } else {
+      setSlidesPerView(5);
+    }
+  }
+  useEffect(() => {
+    changeSlidesPerView();
+    window.addEventListener("resize", changeSlidesPerView);
+  }, []);
   return (
     <div className="home__section">
       <div className="home__section__content">
@@ -33,7 +55,7 @@ function HomeSection() {
           <div className="home__section__content__top__left">
             <svg
               width="206"
-              height="71"
+              height="61"
               viewBox="0 0 206 71"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -124,12 +146,50 @@ function HomeSection() {
             </div>
           </div>
         </div>
-        <div className="home__section__content__bottom__slider">
-          <img src={svg1} alt="" />
-          <img src={svg1} alt="" />
-          <img src={svg1} alt="" />
-          <img src={svg1} alt="" />
-          <img src={svg1} alt="" />
+        <div className="home__section__content__bottom__sec">
+          <Swiper
+            className="home__section__content__bottom__slider__slider"
+            spaceBetween={10}
+            slidesPerView={slidesPerView}
+            onSlideChange={() => console.log("slide change")}
+            onSwiper={(swiper) => console.log(swiper)}
+          >
+            <SwiperSlide>
+              <div className="home__section__content__bottom__slider__slider__img">
+                <img src={svg1} alt="" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="home__section__content__bottom__slider__slider__img">
+                <img src={svg2} alt="" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="home__section__content__bottom__slider__slider__img">
+                <img src={svg3} alt="" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="home__section__content__bottom__slider__slider__img">
+                <img src={svg4} alt="" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="home__section__content__bottom__slider__slider__img">
+                <img src={svg5} alt="" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="home__section__content__bottom__slider__slider__img">
+                <img src={svg1} alt="" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="home__section__content__bottom__slider__slider__img">
+                <img src={svg2} alt="" />
+              </div>
+            </SwiperSlide>
+          </Swiper>
         </div>
       </div>
     </div>

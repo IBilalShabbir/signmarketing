@@ -19,3 +19,7 @@ export { default as footerbg } from "./footerbg.png";
 export { default as banner } from "./banner.png";
 export { default as homebottom } from "./homebottom.png";
 export { default as svg1 } from "./svg1.png";
+export { default as svg2 } from "./svg2.png";
+export { default as svg3 } from "./svg3.png";
+export { default as svg4 } from "./svg4.png";
+export { default as svg5 } from "./svg5.png";

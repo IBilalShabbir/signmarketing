@@ -14,20 +14,20 @@
 .home__section__content__top__left {
   position: relative;
   width: 50%;
+  height: 100%;
   display: flex;
   justify-content: center;
   padding: 2em;
 }
 .home__section__content__top__left svg {
   position: absolute;
-  top: 0;
-  margin-top: 5em;
-  height: 50%;
+  top: 80px;
+  height: 100%;
   display: flex;
   align-items: center;
-  width: 250px;
+  width: 180px;
   z-index: -1;
-  margin-left: 0em;
+  margin-left: -4em;
 }
 .home__section__content__top__left__heading {
   font-size: 35px;
@@ -52,7 +52,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.899);
   padding: 2em;
-  padding-top: 10em;
+  padding-top: 12em;
   top: 0;
   height: 100%;
   width: 100%;
@@ -74,6 +74,11 @@
   font-size: 16px;
   font-weight: bold;
   border-radius: 10px;
+}
+.home__section__content__top__right__link:hover {
+  background-color: #ed1b24;
+  transition: 300ms ease-in-out;
+  color: $white;
 }
 .home__section__content__bottom {
   width: 100%;
@@ -111,11 +116,11 @@
   align-items: center;
 }
 .home__section__content__bottom__left__overlay__btn {
-  background-color: #ed1b24;
+  background-color: $white;
   height: 200px;
   width: 200px;
   margin-right: 1em;
-  color: $white;
+  color: #ed1b24;
   font-weight: 500;
   transition: 300ms ease-in-out;
   cursor: pointer;
@@ -135,7 +140,7 @@
   align-items: center;
   justify-content: center;
   border: 1px solid transparent;
-  background-color: $white;
+  background-color: #ed1b24;
   border-radius: 50px;
   margin-bottom: 1em;
 }
@@ -143,24 +148,23 @@
   height: 35px;
   width: 35px;
   z-index: 22;
-  color: #ed1b24;
+  color: $white;
 }
 
 .home__section__content__bottom__left__overlay__btn:hover {
-  background-color: $white;
+  background-color: #ed1b24;
   transition: 300ms ease-in-out;
-  color: #ed1b24;
+  color: $white;
 }
 .home__section__content__bottom__left__overlay__btn:hover
   .home__section__content__bottom__left__overlay__btn__img {
-  background-color: #ed1b24;
-  color: $white;
+  background-color: $white;
   transition: 300ms ease-in-out;
 }
 .home__section__content__bottom__left__overlay__btn:hover
   .home__section__content__bottom__left__overlay__btn__img
   svg {
-  color: $white;
+  color: #ed1b24;
   transition: 300ms ease-in-out;
 }
 .home__section__content__bottom__right {
@@ -185,16 +189,36 @@
   font-size: 18px;
   font-weight: 500;
 }
-.home__section__content__bottom__slider {
+.home__section__content__bottom__sec {
   width: 100%;
-  height: 200px;
+  height: 100%;
+  padding: 3em 2em;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #f0f0f0;
-  margin-bottom: 8em;
+  margin-bottom: 4em;
 }
-.home__section__content__bottom__slider img {
+.home__section__content__bottom__slider__slider {
+  width: calc(100% - 2em);
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home__section__content__bottom__slider__slider__img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home__section__content__bottom__slider__slider__img img {
+  width: 120px;
+  height: 50px;
+}
+.home__section__content__bottom__sec img {
   margin: 0 2em;
 }
 //
@@ -574,7 +598,7 @@
   background-color: #eeeeee;
 }
 .benefit__section__container {
-  width: 100%;
+  width: calc(100% - 2em);
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -1099,9 +1123,6 @@
     max-width: 400px;
   }
 
-  .home__section__content__top__left svg {
-    margin-top: 5em;
-  }
   .home__section__content__top__left__heading {
     margin-top: 3em;
     padding-top: 1.5em;
@@ -1132,8 +1153,81 @@
   .cities__sec__container__entry {
     min-width: 426px;
   }
+  .home__section__content__bottom {
+    margin-top: -7em;
+  }
 }
 @media (max-width: 1000px) {
+  .home__section__content__top {
+    flex-direction: column;
+  }
+  .home__section__content__top__right img {
+    display: none;
+  }
+  .home__section__content__bottom {
+    margin-top: 3em;
+    height: 100%;
+    flex-direction: column;
+  }
+  .home__section__content__bottom__left {
+    width: 100%;
+  }
+  .home__section__content__bottom__left__overlay__btn {
+    margin: 1em 2em;
+  }
+  .home__section__content__bottom__right__entry {
+    margin: 3em 3em;
+  }
+  .home__section__content__bottom__left img {
+    min-height: 450px;
+    width: 100%;
+  }
+  .home__section__content__bottom__right {
+    position: relative;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .home__section__content__bottom__slider {
+    margin-bottom: 0em;
+  }
+  .home__section__content__top__left {
+    width: 100%;
+    justify-content: center;
+  }
+  .home__section__content__top__left svg {
+    margin-left: 0em;
+    left: 200px;
+  }
+  .home__section__content__top__left__heading {
+    max-width: 100%;
+  }
+  .home__section__content__top__right {
+    z-index: 2;
+    width: 100%;
+    background-color: transparent;
+  }
+  .home__section__content__top__right__top {
+    padding-top: 0em;
+    position: relative;
+    background-color: transparent;
+    color: #000000;
+  }
+  .home__section__content__top__right__link {
+    background-color: #ed1b24;
+    color: $white;
+  }
+  .home__section__content__top__right__link:hover {
+    background-color: transparent;
+    color: #ed1b24;
+    border: 1px solid #ed1b24;
+  }
+  .home__section__content__top__right__info {
+    max-width: 100%;
+  }
+  .home__section__content__bottom__sec {
+    margin-bottom: 0em;
+  }
   .about__us__container__overlay {
     flex-direction: column;
   }
@@ -1347,6 +1441,23 @@
   .region__sec__content {
     padding-bottom: 0em;
   }
+  .home__section__content__top__left svg {
+    left: 100px;
+  }
+  .home__section__content__bottom__left__overlay__btn {
+    margin: 1em 0em;
+  }
+  .home__section__content__bottom__left img {
+    min-height: 600px;
+    object-fit: cover;
+    border-radius: 0px;
+  }
+  .home__section__content__bottom__left__overlay {
+    flex-direction: column;
+  }
+  .home__section__content__bottom__right {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 450px) {
@@ -1364,5 +1475,8 @@
 @media (max-width: 400px) {
   .contact__sec__container__right {
     display: none;
+  }
+  .home__section__content__top__left svg {
+    left: 50px;
   }
 }
