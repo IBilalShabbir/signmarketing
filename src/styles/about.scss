@@ -233,11 +233,22 @@
   padding: 2em;
   border-radius: 15px;
   color: $white;
+  display: none;
 }
+.swiper__img:hover .swiper__img__overlay__content__hover {
+  display: block;
+  cursor: pointer;
+}
+.swiper__img:hover .swiper__img__overlay {
+  display: none;
+}
+
 .swiper__img__overlay__content__hover__content {
   display: flex;
-  justify-content: center;
+  height: 100%;
+  min-height: 100%;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 .swiper__img__overlay__hover__content__heading {
