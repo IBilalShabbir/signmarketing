@@ -51,6 +51,7 @@ export default function About() {
                 </button>
               </div>
             </div>
+
             <div className="about__us__container__overlay__right">
               <Aboutcard
                 active={index === 0}

@@ -7,6 +7,7 @@ import { Projects } from "../components/Projects";
 import RegionSec from "../components/RegionSec";
 import YourChoiceSec from "../components/YourChoiceSec";
 import { HomeSection } from "../components/HomeSection";
+import Fade from "react-reveal/Fade";
 
 export default function index() {
   return (

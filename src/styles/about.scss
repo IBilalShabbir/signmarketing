@@ -1103,7 +1103,7 @@
 .cities__sec img {
   width: 100%;
   height: 100%;
-  max-height: 100%;
+  min-height: 700px;
   z-index: -1;
   object-fit: cover;
 }
@@ -1188,6 +1188,9 @@
   }
   .cities__sec__container__entry {
     min-width: 426px;
+  }
+  .cities__sec__container {
+    padding: 4em 1em;
   }
 }
 @media (max-width: 1000px) {
@@ -1302,6 +1305,14 @@
     width: 100%;
     text-align: center;
   }
+
+  .cities__sec__bg {
+    height: 1200px;
+  }
+
+  .cities__sec__container {
+    padding: 4em 4em;
+  }
   .contact__sec__container {
     flex-direction: column;
   }
@@ -1318,9 +1329,6 @@
   }
   .contact__sec {
     padding-top: 0em;
-  }
-  .cities__sec__bg {
-    height: 1200px;
   }
 }
 @media (max-width: 917px) {
@@ -1537,6 +1545,9 @@
     left: 0px !important;
     top: 150px;
     right: unset !important;
+  }
+  .contact__sec__container__left__btn {
+    width: 150px;
   }
 }
 
