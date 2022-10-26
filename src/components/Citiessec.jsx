@@ -1,6 +1,7 @@
 import React from "react";
 import { citymap } from "../assets";
 import MapSecEntry from "./MapSecEntry";
+import { Fade } from "react-reveal";
 
 export default function Citiessec() {
   return (
