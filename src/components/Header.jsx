@@ -25,6 +25,7 @@ export default function Header() {
     {
       label: "Home",
       scrollTo: "home",
+      defaultChecked: true,
     },
     {
       label: "About Us",
@@ -69,11 +70,16 @@ export default function Header() {
         </button>
         {isNavOpen && (
           <div className="header__content__nav">
-            {navLinks.map((link, index) => (
+            {navLinks.map((link) => (
               <NavLink
                 scrollTo={link.scrollTo}
                 label={link.label}
-                defaultChecked={index === 0}
+                defaultChecked={link.defaultChecked}
+                onChange={() => {
+                  if (window.innerWidth < 1000) {
+                    setIsNavOpen(false);
+                  }
+                }}
               />
             ))}
           </div>

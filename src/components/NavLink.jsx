@@ -1,6 +1,6 @@
 import React from "react";
 
-export function NavLink({ label, scrollTo, defaultChecked }) {
+export function NavLink({ label, scrollTo, defaultChecked, onChange }) {
   return (
     <div className="header__content__nav__link">
       <input
@@ -13,6 +13,7 @@ export function NavLink({ label, scrollTo, defaultChecked }) {
           document
             .getElementById(scrollTo + "__section")
             .scrollIntoView({ behavior: "smooth" });
+          onChange();
         }}
       />
       <div className="header__content__nav__link__content">{label}</div>

@@ -111,6 +111,10 @@
   .header__content__nav__link:last-child {
     margin-bottom: 0em;
   }
+  .header__content__nav__link__input:checked
+    ~ .header__content__nav__link__content {
+    background-color: $color;
+  }
   .header__content__nav__link__content {
     color: black;
   }
