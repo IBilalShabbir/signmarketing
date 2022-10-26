@@ -63,8 +63,8 @@ body {
 }
 .subscribe__mail__btn {
   position: relative;
-  background-color: #ed1b24;
-  color: white;
+  background-color: $color;
+  color: $white;
   border: none;
   padding: 0 1em;
   font-size: 13px;
@@ -77,8 +77,8 @@ body {
 }
 .subscribe__mail__btn:hover {
   background-color: $white;
-  border: 1px solid #ed1b24;
-  color: #ed1b24;
+  border: 1px solid $color;
+  color: $color;
 }
 .footer__link__section {
   width: calc(100% - 4em);
@@ -103,7 +103,7 @@ body {
   margin: 0 1em;
 }
 .footer__links:hover {
-  color: #ed1b24;
+  color: $color;
   transition: 300ms ease-in-out;
 }
 .footer__link__section__links {
@@ -142,7 +142,7 @@ body {
   text-decoration: none;
 }
 .term__footer__right a:hover {
-  color: #ed1b24;
+  color: $color;
   transition: 300ms ease-in-out;
 }
 .term__footer__left {

@@ -70,13 +70,13 @@
   height: 60px;
   background-color: $white;
   text-decoration: none;
-  color: #ed1b24;
+  color: $color;
   font-size: 16px;
   font-weight: bold;
   border-radius: 10px;
 }
 .home__section__content__top__right__link:hover {
-  background-color: #ed1b24;
+  background-color: $color;
   transition: 300ms ease-in-out;
   color: $white;
 }
@@ -120,7 +120,7 @@
   height: 200px;
   width: 200px;
   margin-right: 1em;
-  color: #ed1b24;
+  color: $color;
   font-weight: 500;
   transition: 300ms ease-in-out;
   cursor: pointer;
@@ -140,7 +140,7 @@
   align-items: center;
   justify-content: center;
   border: 1px solid transparent;
-  background-color: #ed1b24;
+  background-color: $color;
   border-radius: 50px;
   margin-bottom: 1em;
 }
@@ -152,7 +152,7 @@
 }
 
 .home__section__content__bottom__left__overlay__btn:hover {
-  background-color: #ed1b24;
+  background-color: $color;
   transition: 300ms ease-in-out;
   color: $white;
 }
@@ -164,7 +164,7 @@
 .home__section__content__bottom__left__overlay__btn:hover
   .home__section__content__bottom__left__overlay__btn__img
   svg {
-  color: #ed1b24;
+  color: $color;
   transition: 300ms ease-in-out;
 }
 .home__section__content__bottom__right {
@@ -279,7 +279,7 @@
   width: 150px;
   padding: 1em 0em;
   background-color: $white;
-  color: #ed1b24;
+  color: $color;
   font-size: 15px;
   font-weight: bold;
   border-radius: 10px;
@@ -314,11 +314,11 @@
   color: $white;
 }
 .about__us__overlay__left__buttons__see__more:hover {
-  color: #ed1b24;
+  color: $color;
   transition: 300ms ease-in-out;
 }
 .about__us__overlay__left__buttons__see__more:hover * {
-  color: #ed1b24;
+  color: $color;
   transition: 300ms ease-in-out;
 }
 .about__us__container__overlay__right {
@@ -393,7 +393,7 @@
 }
 .design__and__construction__section___heading {
   font-size: 25px;
-  color: #ed1b24;
+  color: $color;
   margin-bottom: 0.5em;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
@@ -546,7 +546,7 @@
   z-index: 99;
 }
 .swiper__img__overlay__content__bottom__btn button {
-  background-color: #ed1b24;
+  background-color: $color;
   color: #fff;
   height: 35px;
   padding: 0 1em;
@@ -577,11 +577,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ed1b24;
+  color: $color;
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: 5px;
-  background-color: white;
+  background-color: $white;
   cursor: pointer;
 }
 .swiper__button__handles button svg {
@@ -589,8 +589,8 @@
   height: 20px;
 }
 .swiper__button__handles button:hover {
-  color: white;
-  background-color: #ed1b24;
+  color: $white;
+  background-color: $color;
 }
 .swiper__button__handles button:nth-child(2) {
   margin-left: 5px;
@@ -616,7 +616,7 @@
   margin: 0 auto;
 }
 .benefit__section__container__heading {
-  color: #ed1b24;
+  color: $color;
   font-size: 35px;
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -812,11 +812,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ed1b24;
+  color: $color;
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: 5px;
-  background-color: white;
+  background-color: $white;
   cursor: pointer;
 }
 .swiper__button__handles__your__choice button svg {
@@ -824,8 +824,8 @@
   height: 20px;
 }
 .swiper__button__handles__your__choice button:hover {
-  color: white;
-  background-color: #ed1b24;
+  color: $white;
+  background-color: $color;
 }
 .swiper__button__handles__your__choice button:nth-child(2) {
   margin-left: 5px;
@@ -943,7 +943,7 @@
   position: absolute;
   height: 150px;
   width: 100%;
-  background-color: #ed1b24;
+  background-color: $color;
   z-index: -1;
   top: 150px;
 }
@@ -976,7 +976,7 @@
 .contact__sec__container__left__heading::after {
   position: absolute;
   content: "";
-  background-color: #ed1b24;
+  background-color: $color;
   width: 85px;
   height: 3px;
   border-radius: 5px;
@@ -991,7 +991,7 @@
 .contact__sec__container__left__heading__field__error {
   position: absolute;
   bottom: 10px;
-  color: #ed1b24;
+  color: $color;
   font-weight: bold;
   padding-left: 1.5em;
 }
@@ -1019,7 +1019,7 @@
   bottom: -25px;
   padding-left: 2em;
   font-weight: bold;
-  color: #ed1b24;
+  color: $color;
 }
 .contact__sec__container__left__heading__field__textarea textarea {
   width: 100%;
@@ -1243,13 +1243,13 @@
     color: #000000;
   }
   .home__section__content__top__right__link {
-    background-color: #ed1b24;
+    background-color: $color;
     color: $white;
   }
   .home__section__content__top__right__link:hover {
     background-color: transparent;
-    color: #ed1b24;
-    border: 1px solid #ed1b24;
+    color: $color;
+    border: 1px solid $color;
   }
   .home__section__content__top__right__info {
     max-width: 100%;
