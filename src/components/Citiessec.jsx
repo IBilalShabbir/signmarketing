@@ -20,7 +20,7 @@ export default function Citiessec() {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g clip-path="url(#clip0_158_283)">
+              <g clipPath="url(#clip0_158_283)">
                 <g filter="url(#filter0_f_158_283)">
                   <ellipse
                     cx="22.3799"
@@ -28,7 +28,7 @@ export default function Citiessec() {
                     rx="10.8916"
                     ry="2.93635"
                     fill="black"
-                    fill-opacity="0.6"
+                    fillOpacity="0.6"
                   />
                 </g>
                 <path
@@ -44,9 +44,9 @@ export default function Citiessec() {
                   width="29.7852"
                   height="13.8727"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -76,7 +76,7 @@ export default function Citiessec() {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g clip-path="url(#clip0_158_283)">
+              <g clipPath="url(#clip0_158_283)">
                 <g filter="url(#filter0_f_158_283)">
                   <ellipse
                     cx="22.3799"
@@ -84,7 +84,7 @@ export default function Citiessec() {
                     rx="10.8916"
                     ry="2.93635"
                     fill="black"
-                    fill-opacity="0.6"
+                    fillOpacity="0.6"
                   />
                 </g>
                 <path
@@ -100,9 +100,9 @@ export default function Citiessec() {
                   width="29.7852"
                   height="13.8727"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -132,7 +132,7 @@ export default function Citiessec() {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g clip-path="url(#clip0_158_283)">
+              <g clipPath="url(#clip0_158_283)">
                 <g filter="url(#filter0_f_158_283)">
                   <ellipse
                     cx="22.3799"
@@ -140,7 +140,7 @@ export default function Citiessec() {
                     rx="10.8916"
                     ry="2.93635"
                     fill="black"
-                    fill-opacity="0.6"
+                    fillOpacity="0.6"
                   />
                 </g>
                 <path
@@ -156,9 +156,9 @@ export default function Citiessec() {
                   width="29.7852"
                   height="13.8727"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -190,7 +190,7 @@ export default function Citiessec() {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g clip-path="url(#clip0_158_283)">
+              <g clipPath="url(#clip0_158_283)">
                 <g filter="url(#filter0_f_158_283)">
                   <ellipse
                     cx="22.3799"
@@ -198,7 +198,7 @@ export default function Citiessec() {
                     rx="10.8916"
                     ry="2.93635"
                     fill="black"
-                    fill-opacity="0.6"
+                    fillOpacity="0.6"
                   />
                 </g>
                 <path
@@ -214,9 +214,9 @@ export default function Citiessec() {
                   width="29.7852"
                   height="13.8727"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -248,7 +248,7 @@ export default function Citiessec() {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g clip-path="url(#clip0_158_283)">
+              <g clipPath="url(#clip0_158_283)">
                 <g filter="url(#filter0_f_158_283)">
                   <ellipse
                     cx="22.3799"
@@ -256,7 +256,7 @@ export default function Citiessec() {
                     rx="10.8916"
                     ry="2.93635"
                     fill="black"
-                    fill-opacity="0.6"
+                    fillOpacity="0.6"
                   />
                 </g>
                 <path
@@ -272,9 +272,9 @@ export default function Citiessec() {
                   width="29.7852"
                   height="13.8727"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -308,7 +308,7 @@ export default function Citiessec() {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g clip-path="url(#clip0_158_283)">
+              <g clipPath="url(#clip0_158_283)">
                 <g filter="url(#filter0_f_158_283)">
                   <ellipse
                     cx="22.3799"
@@ -316,7 +316,7 @@ export default function Citiessec() {
                     rx="10.8916"
                     ry="2.93635"
                     fill="black"
-                    fill-opacity="0.6"
+                    fillOpacity="0.6"
                   />
                 </g>
                 <path
@@ -332,9 +332,9 @@ export default function Citiessec() {
                   width="29.7852"
                   height="13.8727"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -365,7 +365,7 @@ export default function Citiessec() {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g clip-path="url(#clip0_158_283)">
+              <g clipPath="url(#clip0_158_283)">
                 <g filter="url(#filter0_f_158_283)">
                   <ellipse
                     cx="22.3799"
@@ -373,7 +373,7 @@ export default function Citiessec() {
                     rx="10.8916"
                     ry="2.93635"
                     fill="black"
-                    fill-opacity="0.6"
+                    fillOpacity="0.6"
                   />
                 </g>
                 <path
@@ -389,9 +389,9 @@ export default function Citiessec() {
                   width="29.7852"
                   height="13.8727"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -422,7 +422,7 @@ export default function Citiessec() {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g clip-path="url(#clip0_158_283)">
+              <g clipPath="url(#clip0_158_283)">
                 <g filter="url(#filter0_f_158_283)">
                   <ellipse
                     cx="22.3799"
@@ -430,7 +430,7 @@ export default function Citiessec() {
                     rx="10.8916"
                     ry="2.93635"
                     fill="black"
-                    fill-opacity="0.6"
+                    fillOpacity="0.6"
                   />
                 </g>
                 <path
@@ -446,9 +446,9 @@ export default function Citiessec() {
                   width="29.7852"
                   height="13.8727"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"

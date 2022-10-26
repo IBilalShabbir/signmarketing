@@ -127,8 +127,6 @@ export function HomeSection() {
             className="home__section__content__bottom__slider__slider"
             spaceBetween={10}
             slidesPerView={slidesPerView}
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}
           >
             <SwiperSlide>
               <div className="home__section__content__bottom__slider__slider__img">

@@ -4,8 +4,10 @@ import { X, Menu } from "react-feather";
 import { NavLink } from "./NavLink";
 
 export default function Header() {
+  const [checked, setIsChecked] = useState("Home");
   const [isNavOpen, setIsNavOpen] = useState(true);
   const [isScrolling, setIsScrolling] = useState(false);
+
   function changeNav() {
     setIsNavOpen(window.innerWidth > 1000);
   }
@@ -72,14 +74,12 @@ export default function Header() {
           <div className="header__content__nav">
             {navLinks.map((link) => (
               <NavLink
+                key={link.label}
                 scrollTo={link.scrollTo}
                 label={link.label}
-                defaultChecked={link.defaultChecked}
-                onChange={() => {
-                  if (window.innerWidth < 1000) {
-                    setIsNavOpen(false);
-                  }
-                }}
+                checked={checked}
+                setIsChecked={setIsChecked}
+                setIsNavOpen={setIsNavOpen}
               />
             ))}
           </div>
