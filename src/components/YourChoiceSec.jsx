@@ -18,11 +18,14 @@ export default function YourChoiceSec() {
           data-aos-easing="ease-in-out"
         >
           <Swiper
+            direction="vertical"
+            mousewheel={true}
             modules={[Navigation, Pagination]}
-            spaceBetween={30}
             slidesPerView={1}
-            navigation
-            pagination={{ clickable: true }}
+            spaceBetween={30}
+            pagination={{
+              clickable: true,
+            }}
             scrollbar={{ draggable: true }}
             onInit={(swiper) => {
               swiper.params.navigation.prevEl = prevRef.current;
@@ -30,6 +33,7 @@ export default function YourChoiceSec() {
               swiper.navigation.init();
               swiper.navigation.update();
             }}
+            style={{ height: 300 }}
           >
             <SwiperSlide>
               <div className="your__choice__slider__img">

@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { logo } from "../assets";
 import { X, Menu } from "react-feather";
+import { NavLink } from "./NavLink";
 
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(true);
   const [isScrolling, setIsScrolling] = useState(false);
+  function changeNav() {
+    setIsNavOpen(window.innerWidth > 1000);
+  }
   useEffect(() => {
-    function changeNav() {
-      setIsNavOpen(window.innerWidth > 1000);
-    }
-
+    changeNav();
     window.addEventListener("resize", changeNav);
     window.addEventListener("scroll", () => {
       if (window.scrollY > 0) {
@@ -78,26 +79,6 @@ export default function Header() {
           </div>
         )}
       </div>
-    </div>
-  );
-}
-
-function NavLink({ label, scrollTo, defaultChecked }) {
-  return (
-    <div className="header__content__nav__link">
-      <input
-        type="radio"
-        className="header__content__nav__link__input"
-        name="header__content__nav__link"
-        defaultChecked={defaultChecked}
-        id={scrollTo}
-        onChange={() => {
-          document
-            .getElementById(scrollTo + "__section")
-            .scrollIntoView({ behavior: "smooth" });
-        }}
-      />
-      <div className="header__content__nav__link__content">{label}</div>
     </div>
   );
 }

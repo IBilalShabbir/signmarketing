@@ -12,7 +12,7 @@ export default function About() {
 
   return (
     <>
-      <div className="about__us__section" id="home">
+      <section className="about__us__section" id="about__section">
         <div className="about__us__section__container">
           <img src={aboutbg} alt="" />
           <div className="about__us__container__overlay">
@@ -87,7 +87,7 @@ export default function About() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

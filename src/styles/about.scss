@@ -448,6 +448,7 @@
   justify-content: center;
 }
 .swiper__img__overlay {
+  transition: 300ms ease-in-out;
   position: absolute;
   bottom: 30px;
   width: calc(100% - 2em);
@@ -457,6 +458,8 @@
   padding: 2em;
   background-color: rgba(0, 0, 0, 0.9);
   border-radius: 12px;
+  animation: swiper__img__overlay__content__hover 500ms both;
+  transform-origin: center;
 }
 .swiper__img__overlay__content__hover {
   position: absolute;
@@ -469,6 +472,16 @@
   border-radius: 15px;
   color: $white;
   display: none;
+  animation: swiper__img__overlay__content__hover 500ms both;
+  transform-origin: center;
+}
+@keyframes swiper__img__overlay__content__hover {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .swiper__img:hover .swiper__img__overlay__content__hover {
   display: block;
@@ -761,9 +774,25 @@
   width: 100%;
   height: 100%;
 }
+.your__choice__container__left__swiper
+  .swiper-vertical
+  > .swiper-pagination-bullets,
+.swiper-pagination-vertical.swiper-pagination-bullets {
+  left: 10px !important;
+  right: unset !important;
+}
+.your__choice__container__left__swiper
+  .swiper-vertical
+  > .swiper-pagination-bullets,
+.swiper-pagination-vertical.swiper-pagination-bullets
+  .swiper-pagination-bullet-active {
+  max-width: 10px !important;
+  height: 20px !important;
+}
 .your__choice__slider__img {
   width: 400px;
   height: 100%;
+  margin-left: 40px;
 }
 .your__choice__slider__img img {
   width: 100%;
