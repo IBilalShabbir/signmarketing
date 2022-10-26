@@ -8,10 +8,6 @@ export default function ContactUs() {
       <div className="contact__sec__container">
         <div
           className="contact__sec__container__left"
-          data-aos="fade-right"
-          data-aos-offset="100"
-          data-aos-delay="40"
-          data-aos-duration="1200"
           data-aos-easing="ease-in-out"
         >
           <div className="contact__sec__container__left__form">

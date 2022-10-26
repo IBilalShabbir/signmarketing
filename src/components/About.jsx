@@ -16,14 +16,7 @@ export default function About() {
         <div className="about__us__section__container">
           <img src={aboutbg} alt="" />
           <div className="about__us__container__overlay">
-            <div
-              className="about__us__container__overlay__left"
-              data-aos="fade-right"
-              data-aos-offset="200"
-              data-aos-delay="50"
-              data-aos-duration="1500"
-              data-aos-easing="ease-in-out"
-            >
+            <div className="about__us__container__overlay__left">
               <div className="about__us__overlay__left__heading">About Us</div>
               <div className="about__us__overlay__left__text">
                 Dream Home is a gated community with a great location. Located
@@ -58,14 +51,7 @@ export default function About() {
                 </button>
               </div>
             </div>
-            <div
-              className="about__us__container__overlay__right"
-              data-aos="fade-left"
-              data-aos-offset="200"
-              data-aos-delay="50"
-              data-aos-duration="1500"
-              data-aos-easing="ease-in-out"
-            >
+            <div className="about__us__container__overlay__right">
               <Aboutcard
                 active={index === 0}
                 heading="500+"

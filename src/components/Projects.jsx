@@ -34,22 +34,12 @@ export function Projects() {
         <div className="design__and__construction__section___text__container">
           <div
             className="design__and__construction__section__container__heading__left"
-            data-aos="fade-right"
-            data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="1500"
-            data-aos-easing="ease-in-out"
             style={{ marginBottom: ".5em" }}
           >
             We Provide Architectural design and Construction
           </div>
           <div
             className="design__and__construction__section__container__heading__right"
-            data-aos="fade-left"
-            data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="1500"
-            data-aos-easing="ease-in-out"
             style={{ paddingBottom: "3em" }}
           >
             More than 100 building and housing projects that we have built. The

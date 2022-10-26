@@ -11,10 +11,6 @@ export default function YourChoiceSec() {
       <div className="your__choice__container">
         <div
           className="your__choice__container__left"
-          data-aos="fade-right"
-          data-aos-offset="200"
-          data-aos-delay="40"
-          data-aos-duration="1200"
           data-aos-easing="ease-in-out"
         >
           <Swiper

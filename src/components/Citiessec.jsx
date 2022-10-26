@@ -4,14 +4,7 @@ import MapSecEntry from "./MapSecEntry";
 
 export default function Citiessec() {
   return (
-    <section
-      className="cities__sec"
-      data-aos="fade-up"
-      data-aos-offset="200"
-      data-aos-delay="40"
-      data-aos-duration="1200"
-      data-aos-easing="ease-in-out"
-    >
+    <section className="cities__sec" data-aos-easing="ease-in-out">
       <div className="cities__sec__bg">
         <img src={citymap} alt="" />
         <div className="cities__sec__bg__overlay"></div>
