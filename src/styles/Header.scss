@@ -14,7 +14,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1em 0em;
+  padding: 1em 1em;
 }
 .header__content__logo {
   display: flex;
@@ -44,6 +44,7 @@
 }
 .header__content__nav {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
 }
 .header__content__nav__link {
@@ -86,11 +87,7 @@
   background-color: $color;
   color: $white;
 }
-@media (max-width: 1500px) {
-  .header__content {
-    padding: 1em 2em;
-  }
-}
+
 @media (max-width: 1000px) {
   .header__content__nav__menu {
     display: flex;

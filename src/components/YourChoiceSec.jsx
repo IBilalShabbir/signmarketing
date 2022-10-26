@@ -7,7 +7,7 @@ export default function YourChoiceSec() {
   const prevRef = React.useRef(null);
   const nextRef = React.useRef(null);
   return (
-    <div className="your__choice__sec">
+    <section className="your__choice__sec" id="contact__section">
       <div className="your__choice__container">
         <div
           className="your__choice__container__left"
@@ -139,6 +139,6 @@ export default function YourChoiceSec() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

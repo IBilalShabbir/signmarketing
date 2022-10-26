@@ -4,7 +4,7 @@ import MapSecEntry from "./MapSecEntry";
 
 export default function Citiessec() {
   return (
-    <div
+    <section
       className="cities__sec"
       data-aos="fade-up"
       data-aos-offset="200"
@@ -477,6 +477,6 @@ export default function Citiessec() {
           text="Deans Trade Center, UG-7 & UG-8, Opposite F.C Headquarters, Saddar Peshawar, Khyber Pakhtunkhwa"
         />
       </div>
-    </div>
+    </section>
   );
 }

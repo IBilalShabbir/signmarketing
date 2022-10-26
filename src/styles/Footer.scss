@@ -37,7 +37,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   border-radius: 12px;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 .subscribe__card__container__heading {
   font-size: 35px;
@@ -56,10 +56,14 @@ body {
   width: 100%;
   max-width: 400px;
   background: transparent;
-  border: 1px solid black;
+  border: 1px solid rgba(102, 102, 102, 0.3);
   border-radius: 5px;
   outline: none;
   padding-right: 12em;
+}
+.subscribe__card__container__mail input:hover {
+  border: 1px solid #ed1b24;
+  transition: 300ms ease-in-out;
 }
 .subscribe__mail__btn {
   position: relative;

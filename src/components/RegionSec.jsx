@@ -5,7 +5,7 @@ import RegionCard from "./RegionCard";
 
 export default function RegionSec() {
   return (
-    <div className="region__sec">
+    <section className="region__sec">
       <div className="region__sec__con">
         <div className="design__and__construction__section__container">
           <div
@@ -42,7 +42,7 @@ export default function RegionSec() {
               because our work is different.
             </div>
           </div>
-          <div className="region__sec">
+          <div className="region__sec__cards">
             <div
               className="region__sec__content"
               data-aos="fade-up"
@@ -73,6 +73,6 @@ export default function RegionSec() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

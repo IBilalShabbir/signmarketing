@@ -3,7 +3,7 @@ import { contactform } from "../assets";
 
 export default function ContactUs() {
   return (
-    <div className="contact__sec">
+    <section className="contact__sec">
       <div className="contact__sec__container__bg"></div>
       <div className="contact__sec__container">
         <div
@@ -54,6 +54,6 @@ export default function ContactUs() {
           <img src={contactform} alt="" />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
