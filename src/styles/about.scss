@@ -70,8 +70,7 @@
   font-family: "Poppins", sans-serif;
 }
 .home__section__content__top__right__link {
-  padding: 1em 2em;
-  height: 60px;
+  padding: 0.8em 1.5em;
   background-color: $white;
   text-decoration: none;
   color: $color;
@@ -264,7 +263,7 @@
   padding: 2em;
 }
 .about__us__overlay__left__heading {
-  font-size: 35px;
+  font-size: 30px;
   color: $white;
   font-weight: 600;
   margin-bottom: 0.5em;
@@ -349,7 +348,7 @@
 }
 .about__us__overlay__right__card__heading {
   font-family: "Poppins", sans-serif;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 600;
   color: $white;
 }
@@ -419,7 +418,7 @@
 }
 .design__and__construction__section__container__heading__left {
   width: 50%;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: bold;
   max-width: 600px;
   font-family: "Poppins", sans-serif;
@@ -506,7 +505,7 @@
   align-items: center;
 }
 .swiper__img__overlay__hover__content__heading {
-  font-size: 25px;
+  font-size: 22px;
   margin-bottom: 0.3em;
   font-weight: 600;
 }
@@ -536,7 +535,7 @@
 
 .swiper__img__overlay__content__heading {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 500;
   color: #fff;
   margin-bottom: 0.1em;
   font-family: "Poppins", sans-serif;
@@ -628,12 +627,12 @@
 }
 .benefit__section__container__heading {
   color: $color;
-  font-size: 35px;
+  font-size: 30px;
   text-align: center;
   font-family: "Poppins", sans-serif;
 }
 .benefit__section__container__sub__heading {
-  font-size: 35px;
+  font-size: 30px;
   text-align: center;
   font-weight: bold;
   margin-bottom: 0.5em;
@@ -710,8 +709,8 @@
 }
 .benefit__section__container__cards__entry__data__heading {
   margin-bottom: 0.4em;
-  font-size: 25px;
-  font-weight: bold;
+  font-size: 22px;
+  font-weight: 500;
   font-family: "Poppins", sans-serif;
 }
 .benefit__section__container__cards__button {
@@ -722,8 +721,8 @@
   justify-content: center;
 }
 .benefit__section__container__cards__button__contact {
-  height: 50px;
-  padding: 0em 3em;
+  height: 45px;
+  padding: 0em 2em;
   cursor: pointer;
   background-color: $color;
   color: $white;
@@ -739,8 +738,8 @@
   background-color: rgb(246, 30, 50);
 }
 .benefit__section__container__cards__button__more {
-  height: 50px;
-  padding: 0em 3em;
+  height: 45px;
+  padding: 0em 2em;
   cursor: pointer;
   background-color: transparent;
   color: black;
@@ -956,7 +955,7 @@
 .your__choice__container__right__wrapper__text__text {
   font-size: 22px;
   max-width: 250px;
-  font-weight: 600;
+  font-weight: 500;
   font-family: "Poppins", sans-serif;
 }
 .region__sec {
@@ -1055,7 +1054,7 @@
   padding: 3em 3em;
 }
 .contact__sec__container__left__heading {
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 600;
   position: relative;
   margin-bottom: 1.3em;
@@ -1221,14 +1220,14 @@
 }
 .cities__sec__container__entry__data__heading {
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 500;
   margin-bottom: 0.5em;
   font-family: "Poppins", sans-serif;
 }
 .cities__sec__container__entry__data__text {
   width: 100%;
   max-width: 500px;
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -1443,7 +1442,7 @@
   .benefit__section__container__sub__heading,
   .contact__sec__container__left__heading,
   .subscribe__card__container__heading {
-    font-size: 30px;
+    font-size: 25px;
   }
   .about__us__section {
     height: 1050px;
