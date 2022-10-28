@@ -67,6 +67,7 @@
   max-width: 550px;
   margin-bottom: 3em;
   line-height: 25px;
+  font-family: "Poppins", sans-serif;
 }
 .home__section__content__top__right__link {
   padding: 1em 2em;
@@ -77,6 +78,7 @@
   font-size: 16px;
   font-weight: bold;
   border-radius: 10px;
+  font-family: "Poppins", sans-serif;
 }
 .home__section__content__top__right__link:hover {
   background-color: $color;
@@ -120,10 +122,10 @@
 }
 .home__section__content__bottom__left__overlay__btn {
   background-color: $white;
-  height: 200px;
+  height: 180px;
   width: 200px;
   margin-right: 1em;
-  color: $color;
+  color: black;
   font-weight: 500;
   transition: 300ms ease-in-out;
   cursor: pointer;
@@ -133,6 +135,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 20px;
+  font-family: "Poppins", sans-serif;
 }
 .home__section__content__bottom__left__overlay__btn__img {
   margin-right: 0.8em;
@@ -542,6 +545,7 @@
   color: #fff;
   margin-bottom: 1.5em;
   font-size: 14px;
+  font-family: "Poppins", sans-serif;
 }
 .swiper__img__overlay__content__bottom {
   display: flex;
@@ -559,6 +563,7 @@
   align-items: center;
   justify-content: center;
   outline: none;
+  font-family: "Poppins", sans-serif;
 }
 .swiper__img__overlay__content__bottom__svg {
   display: flex;
@@ -586,6 +591,7 @@
   border-radius: 5px;
   background-color: $white;
   cursor: pointer;
+  font-family: "Poppins", sans-serif;
 }
 .swiper__button__handles button svg {
   width: 20px;
@@ -640,6 +646,7 @@
   text-align: center;
   max-width: 800px;
   color: #8a8989;
+  font-family: "Poppins", sans-serif;
 }
 .benefit__section__container__cards {
   width: calc(100% - 1em);
@@ -660,6 +667,7 @@
   margin: 0.5em;
   min-width: 410px;
   cursor: pointer;
+  font-family: "Poppins", sans-serif;
 }
 .benefit__section__container__cards__entry__data__text {
   font-size: 14px;
@@ -801,10 +809,71 @@
   width: 400px;
   height: 100%;
   margin-left: 70px;
+  position: relative;
 }
 .your__choice__slider__img img {
   width: 100%;
   height: 100%;
+}
+.your__choice__slider__img__wrapper {
+  position: absolute;
+  padding: 2em;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  width: 100%;
+  flex: 1;
+  top: 0;
+  border-radius: 15px;
+  left: 0;
+  cursor: pointer;
+  display: none;
+  animation: your__choice__slider__img__wrapper 500ms both;
+  transform-origin: center;
+}
+
+@keyframes your__choice__slider__img__wrapper {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.your__choice__slider__img:hover .your__choice__slider__img__wrapper {
+  display: flex;
+}
+.your__choice__slider__img__wrapper__content__heading {
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: $white;
+  margin-bottom: 1.5em;
+}
+.your__choice__slider__img__wrapper__content__subheading {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  color: #c4c4c4;
+  margin: 0.5em 0em;
+  display: flex;
+  align-items: center;
+}
+.your__choice__slider__img__wrapper__content__subheading svg {
+  margin-right: 0.5em;
+}
+.your__choice__slider__img__wrapper__content__button {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  color: $white;
+  margin-top: 2em;
+}
+.your__choice__slider__img__wrapper__content__button button {
+  padding: 0em 2em;
+  height: 40px;
+  background-color: #ed1b24;
+  color: $white;
+  font-family: "Poppins", sans-serif;
+  border: 1px solid transparent;
+  border-radius: 5px;
 }
 .swiper__button__handles__your__choice {
   position: absolute;
@@ -888,6 +957,7 @@
   font-size: 22px;
   max-width: 250px;
   font-weight: 600;
+  font-family: "Poppins", sans-serif;
 }
 .region__sec {
   width: 100%;
@@ -989,6 +1059,7 @@
   font-weight: 600;
   position: relative;
   margin-bottom: 1.3em;
+  font-family: "Poppins", sans-serif;
 }
 .contact__sec__container__left__heading::after {
   position: absolute;
@@ -1021,6 +1092,7 @@
   font-size: 16px;
   border: 1px solid rgba(102, 102, 102, 0.3);
   outline: none;
+  font-family: "Poppins", sans-serif;
 }
 .contact__sec__container__left__heading__field input:hover {
   border: 1px solid $color;
@@ -1151,11 +1223,13 @@
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 0.5em;
+  font-family: "Poppins", sans-serif;
 }
 .cities__sec__container__entry__data__text {
   width: 100%;
   max-width: 500px;
   font-size: 16px;
+  font-family: "Poppins", sans-serif;
 }
 
 @media (max-width: 1500px) {
@@ -1448,6 +1522,9 @@
   .contact__sec__container__right img {
     display: none;
   }
+  .your__choice__slider__img__wrapper__content__heading {
+    font-size: 21px;
+  }
 }
 @media (max-width: 500px) {
   .about__us__section {
@@ -1562,6 +1639,15 @@
     width: 170px;
     height: 150px;
   }
+  .your__choice__slider__img__wrapper__content__heading {
+    font-size: 20px;
+  }
+  .your__choice__slider__img__wrapper__content__heading {
+    margin-bottom: 1.3em;
+  }
+  .your__choice__slider__img__wrapper__content__subheading {
+    margin: 0.2em 0em;
+  }
 }
 @media (max-width: 400px) {
   .contact__sec__container__right {
@@ -1569,5 +1655,8 @@
   }
   .home__section__content__top__left svg {
     left: 50px;
+  }
+  .your__choice__slider__img__wrapper__content__button {
+    margin-top: 1em;
   }
 }

@@ -2,6 +2,7 @@ import React from "react";
 import { banner, homebottom, svg1, svg2, svg3, svg4, svg5 } from "../assets";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useEffect, useState } from "react";
+import { Autoplay, FreeMode } from "swiper";
 
 export function HomeSection() {
   const [slidesPerView, setSlidesPerView] = useState(5);
@@ -127,6 +128,14 @@ export function HomeSection() {
             className="home__section__content__bottom__slider__slider"
             spaceBetween={10}
             slidesPerView={slidesPerView}
+            loop
+            modules={[Autoplay, FreeMode]}
+            speed={2500}
+            autoplay={{
+              delay: 6,
+            }}
+            onSlideChange={() => console.log("slide change")}
+            onSwiper={(swiper) => console.log(swiper)}
           >
             <SwiperSlide>
               <div className="home__section__content__bottom__slider__slider__img">
