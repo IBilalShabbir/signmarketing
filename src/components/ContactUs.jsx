@@ -18,15 +18,9 @@ export default function ContactUs() {
               </div>
               <div className="contact__sec__container__left__heading__field">
                 <input type="text" placeholder="Name..." />
-                <div className="contact__sec__container__left__heading__field__error">
-                  Please fill the input
-                </div>
               </div>
               <div className="contact__sec__container__left__heading__field">
                 <input type="email" placeholder="Email..." />
-                <div className="contact__sec__container__left__heading__field__error">
-                  Please fill the input
-                </div>
               </div>
 
               <div className="contact__sec__container__left__heading__field__textarea">
@@ -37,9 +31,6 @@ export default function ContactUs() {
                   rows="10"
                   placeholder="Write Your Message Here..."
                 />
-                <div className="contact__sec__container__left__heading__field__textarea__error">
-                  Please fill the input
-                </div>
               </div>
               <div className="contact__sec__container__left__btn__container">
                 <button className="contact__sec__container__left__btn">
