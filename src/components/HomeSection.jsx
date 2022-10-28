@@ -134,8 +134,6 @@ export function HomeSection() {
             autoplay={{
               delay: 6,
             }}
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}
           >
             <SwiperSlide>
               <div className="home__section__content__bottom__slider__slider__img">
