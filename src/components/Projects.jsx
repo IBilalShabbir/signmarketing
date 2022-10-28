@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Pagination, Navigation } from "swiper";
+import { Pagination, Navigation, FreeMode } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { swiperimg1, swiperimg2 } from "../assets";
 import { Fade } from "react-reveal";
@@ -61,7 +61,8 @@ export function Projects() {
             style={{
               paddingBottom: "6em",
             }}
-            modules={[Pagination, Navigation]}
+            modules={[Pagination, Navigation, FreeMode]}
+            loop
             pagination={true}
             spaceBetween={20}
             slidesPerView={slidesPerView}

@@ -1,5 +1,5 @@
 import React from "react";
-import { Navigation, Pagination } from "swiper";
+import { FreeMode, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { swiper123, yourchoicebg, yourchoicewrapper } from "../assets";
 import { Fade } from "react-reveal";
@@ -19,7 +19,8 @@ export default function YourChoiceSec() {
               className="your__choice__container__left__swiper"
               direction="vertical"
               mousewheel={true}
-              modules={[Navigation, Pagination]}
+              modules={[Navigation, Pagination, FreeMode]}
+              loop
               slidesPerView={1}
               spaceBetween={30}
               pagination={{
